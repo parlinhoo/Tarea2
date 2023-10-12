@@ -1,6 +1,6 @@
 package main.objetos;
 
-import main.bebidas.*;
+import main.productos.bebidas.*;
 import main.monedas.*;
 
 public class Expendedor {

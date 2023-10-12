@@ -1,7 +1,7 @@
 package main.objetos;
 
-import main.bebidas.Bebida;
-import main.monedas.Moneda;
+import main.productos.bebidas.*;
+import main.monedas.*;
 
 public class Comprador {
     private String sonido;

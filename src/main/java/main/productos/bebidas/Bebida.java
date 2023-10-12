@@ -1,6 +1,8 @@
-package main.bebidas;
+package main.productos.bebidas;
 
-public abstract class Bebida {
+import main.productos.Producto;
+
+public abstract class Bebida extends Producto {
     private int serie;
     public abstract String beber();
     public int getSerie() {return this.serie;}

@@ -1,4 +1,4 @@
-package main.bebidas;
+package main.productos.bebidas;
 
 public class Sprite extends Bebida {
     @Override
