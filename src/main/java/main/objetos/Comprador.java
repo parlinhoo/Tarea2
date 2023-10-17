@@ -10,7 +10,7 @@ public class Comprador {
     public String queBebiste() {return sonido;}
     public Comprador(Moneda m, int cualBebida, Expendedor exp) {
         Bebida bebida = exp.comprarBebida(m, cualBebida);
-        if (bebida != null) {this.sonido = bebida.beber();}
+        if (bebida != null) {this.sonido = bebida.consumir();}
         Moneda monedaV = exp.getVuelto();
         while (monedaV != null) {
             this.vuelto += monedaV.getValor();
