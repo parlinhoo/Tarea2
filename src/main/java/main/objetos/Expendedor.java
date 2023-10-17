@@ -31,7 +31,7 @@ public class Expendedor {
         }
         if (info == null) {
             this.monVu.add(moneda);
-            throw new NoHayProductoException("Número de producto erróneo");
+            throw new NoHayProductoException("Número de producto no existe");
         }
         if (info.getPrecio() > valor) {
             this.monVu.add(moneda);

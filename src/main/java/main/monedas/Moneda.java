@@ -15,5 +15,10 @@ public abstract class Moneda implements Comparable<Moneda> {
         return ret;
     }
 
+    @Override
+    public String toString() {
+        return String.format("$%d (Serie %s)", this.getValor(), Integer.toHexString(this.hashCode()));
+    }
+
     public Moneda() {}
 }

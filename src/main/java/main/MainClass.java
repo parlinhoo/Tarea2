@@ -12,14 +12,9 @@ public class MainClass {
         Moneda moneda1 = new Moneda1000();
         Comprador comp;
         try {
-            comp = new Comprador(moneda1, 1, expendedor);
-            System.out.println(comp.cuantoVuelto());
-        } catch (PagoIncorrectoException e) {
-            e.printStackTrace();
-        } catch (PagoInsuficienteException e) {
-            e.printStackTrace();
-        } catch (NoHayProductoException e) {
-            e.printStackTrace();
+            comp = new Comprador(moneda1, 4, expendedor);
+        } catch (PagoIncorrectoException | PagoInsuficienteException | NoHayProductoException e) {
+            System.out.printf("Error tipo %s | %s%n", e.getClass().getName(), e.getMessage());
         }
     }
 }
