@@ -15,12 +15,12 @@ public class ExpendedorTest {
             500, 1,
             1500, 2,
             100, 1,
-            1500, 5,
+            1000, 5,
             1500, 6,
             2000, 3
     };
 
-    @ParameterizedTest(name = "Moneda ${0} y producto {1}")
+    @ParameterizedTest(name = "${0} y producto {1}")
     @MethodSource("argsPruebas")
     public void pruebaCompra(int moneda, int producto) {
         Moneda moneda1 = null;
