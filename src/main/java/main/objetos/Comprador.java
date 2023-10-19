@@ -4,8 +4,7 @@ import main.NoHayProductoException;
 import main.PagoIncorrectoException;
 import main.PagoInsuficienteException;
 import main.productos.Producto;
-import main.productos.bebidas.*;
-import main.monedas.*;
+import main.monedas.Moneda;
 
 /**
  * Comprador usuario de un Expendedor
