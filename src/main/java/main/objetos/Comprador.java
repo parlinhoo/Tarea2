@@ -8,7 +8,7 @@ import main.monedas.Moneda;
 
 /**
  * Comprador usuario de un Expendedor
- * @author Bastiän Ceballos Z.
+ * @author Bastián Ceballos Z.
  * @author Fabián González U.
  */
 public class Comprador {

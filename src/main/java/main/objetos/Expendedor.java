@@ -7,7 +7,7 @@ import main.productos.bebidas.*;
 import main.productos.dulces.*;
 /**
  * Expendedor en el que se puede comprar un producto entre 5 variedaes
- * @author Bastiän Ceballos Z.
+ * @author Bastián Ceballos Z.
  * @author Fabián González U.
  */
 

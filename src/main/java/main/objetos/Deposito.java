@@ -3,7 +3,7 @@ package main.objetos;
 import java.util.ArrayList;
 /**
  * Deposito genérico para productos o monedas
- * @author Bastiän Ceballos Z.
+ * @author Bastián Ceballos Z.
  * @author Fabián González U.
  */
 public class Deposito<type> {

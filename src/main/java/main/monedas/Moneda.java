@@ -1,8 +1,8 @@
 package main.monedas;
 
 /**
- *Monedas polimorficas que sirven como metodo de pago
- * @author Bastiän Ceballos Z.
+ * Monedas polimorficas que sirven como metodo de pago
+ * @author Bastián Ceballos Z.
  * @author Fabián González U.
  */
 
@@ -35,6 +35,10 @@ public abstract class Moneda implements Comparable<Moneda> {
         return ret;
     }
 
+    /**
+     * Devuelve un String que representa la clase Moneda
+     * @return Un String con la serie y el valor de la moneda
+     */
     @Override
     public String toString() {
         return String.format("$%d (Serie %s)", this.getValor(), Integer.toHexString(this.hashCode()));
