@@ -1,10 +1,19 @@
 package main.objetos;
 
-import main.*;
-import main.monedas.*;
-import main.productos.*;
-import main.productos.bebidas.*;
-import main.productos.dulces.*;
+import main.NoHayProductoException;
+import main.PagoIncorrectoException;
+import main.PagoInsuficienteException;
+import main.monedas.Moneda;
+import main.monedas.Moneda100;
+import main.productos.InfoProducto;
+import main.productos.Producto;
+import main.productos.bebidas.Bebida;
+import main.productos.bebidas.CocaCola;
+import main.productos.bebidas.Fanta;
+import main.productos.bebidas.Sprite;
+import main.productos.dulces.Dulce;
+import main.productos.dulces.Snickers;
+import main.productos.dulces.Super8;
 
 public class Expendedor {
     private Deposito<Bebida> coca;

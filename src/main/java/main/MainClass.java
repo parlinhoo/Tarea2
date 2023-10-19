@@ -1,10 +1,9 @@
 package main;
 
-import main.monedas.*;
-import main.objetos.*;
-import main.productos.*;
-import main.productos.bebidas.*;
-import main.productos.dulces.*;
+import main.monedas.Moneda;
+import main.monedas.Moneda1000;
+import main.objetos.Comprador;
+import main.objetos.Expendedor;
 
 public class MainClass {
     public static void main(String[] args) {
