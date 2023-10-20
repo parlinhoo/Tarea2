@@ -1,11 +1,11 @@
 package main;
 
 import main.monedas.Moneda;
+import main.monedas.Moneda100;
 import main.monedas.Moneda1000;
 import main.monedas.Moneda1500;
 import main.objetos.Comprador;
 import main.objetos.Expendedor;
-import main.productos.InfoProducto;
 
 public class MainClass {
     public static void main(String[] args) {
@@ -79,5 +79,17 @@ public class MainClass {
             System.out.printf("Error tipo %s | %s%n", e.getClass().getName(), e.getMessage());
         }
 
+        Moneda moneda5 = new Moneda100();
+        Comprador comp5;
+        /** Intentando comprar un producto que no existe en el expendedor*/
+        try {
+            comp1 = new Comprador(moneda5, 7, expendedor);
+            System.out.println(comp1.cuantoVuelto());
+        } catch (PagoIncorrectoException | PagoInsuficienteException | NoHayProductoException e) {
+            expendedor.getVuelto();
+            System.out.println(">>Intentando comprar un producto que no existe en el expendedor:");
+            System.out.printf("Error tipo %s | %s%n", e.getClass().getName(), e.getMessage());
+            System.out.println();
+        }
     }
 }
