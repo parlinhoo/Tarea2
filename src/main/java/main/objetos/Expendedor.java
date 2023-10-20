@@ -59,7 +59,7 @@ public class Expendedor {
         }
         if (info.getPrecio() > valor) {
             this.monVu.add(moneda);
-            throw new NoHayProductoException("Dinero insuficiente");
+            throw new PagoInsuficienteException("Dinero insuficiente");
         }
         Producto selProducto;
         switch (info) {
